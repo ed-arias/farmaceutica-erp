@@ -29,7 +29,7 @@ public class ClienteService {
 
     public Cliente desabilitarCliente(Long id) throws Exception{
         Cliente cliente = clienteRepository.findById(id).orElseThrow(() -> new Exception("Clilente no existe con id:" + id));
-        cliente.setHabilidado(true);
+        cliente.setHabilitado(true);
         return clienteRepository.save(cliente);
     }
 }

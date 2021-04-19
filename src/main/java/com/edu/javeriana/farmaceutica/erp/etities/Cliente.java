@@ -17,10 +17,10 @@ public class Cliente implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long idCliente;
+    private Long id;
     private String nit;
     private String razonSocial;
     private String direccion;
     private String contrasena;
-    private Boolean habilidado = true;
+    private Boolean habilitado = true;
 }
