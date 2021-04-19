@@ -22,5 +22,6 @@ public class Cliente implements Serializable {
     private String razonSocial;
     private String direccion;
     private String contrasena;
+
     private Boolean habilitado = true;
 }
